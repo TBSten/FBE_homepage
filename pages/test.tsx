@@ -14,7 +14,7 @@ export default function Test() {
             </TopSection>
 
             {[1,2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
-                <ContentSection>
+                <ContentSection key={num}>
                     test {num}
                     <p>aaaaaaaaaa</p>
                     <p>aaaaaaaaaa</p>
