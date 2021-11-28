@@ -1,0 +1,10 @@
+@use "style/var" as vars ;
+
+$t-time: 0.2s;
+.link{
+    transition: vars.$transition;
+    &:hover{
+        opacity:0.5;
+        transition: vars.$transition;
+    }
+}

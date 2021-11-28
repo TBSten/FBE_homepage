@@ -1,0 +1,27 @@
+
+@use "style/var" as v ;
+
+.con{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 10px ;
+    .detail{}
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        // border: 1px v.$pri-color solid;
+        // box-shadow: 0 3px 3px 2px rgba(121, 121, 121, 0.411);
+    }
+    &.reverse{
+        grid-template-columns: 6fr 4fr;
+    }
+    @include v.sp{
+        display: flex;
+        flex-direction: column;
+        &.reverse{
+            flex-direction: column-reverse;
+        }
+    }
+}

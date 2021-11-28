@@ -1,0 +1,112 @@
+
+@use "style/var" as vars ;
+
+.header{
+    background: white;
+    box-shadow: 
+        0 5px 4px rgba(0, 0, 0, 0.205);
+    padding: 1rem 0.75rem 2rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+    span{
+        font-size: 3rem;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        li{
+            margin-left:10px;
+            position: relative;
+            &::after{
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: vars.$transition;
+                width: 0%;
+                border-bottom: solid vars.$theme-color 2px;
+            }
+            &:hover{
+                &::after{
+                    transition: vars.$transition;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    div.icon{
+        display: none;
+    }
+    @include vars.sp{
+        padding: 0.3rem 1rem;
+        span{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        ul{
+            display: none;
+        }
+        div.icon{
+            display: block;
+            width: 2rem;
+            height: auto;
+        }
+    }
+
+}
+
+.stick{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(
+        white,
+        white,
+        rgba(255, 255, 255, 0.92),
+    );
+    $shadow:3px;
+    box-shadow: inset 0 -2px 2px 0 rgba(0, 0, 0, 0.103);
+    padding: 0.5rem;
+
+    transition: vars.$transition;
+    transform: scaleY(0);
+    transform-origin: center top;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        display: inline-block;
+        width: auto;
+        &.logo{
+            font-size: 2rem;
+        }
+        &.top{
+            cursor: pointer;
+            transition: vars.$transition;
+            opacity: 1;
+            &:hover{
+                opacity: 0.5;
+                transition: vars.$transition;
+            }
+        }
+    }
+    &.open{
+        z-index: 9000;
+        transition: vars.$transition;
+        transform: scaleY(1);
+    }
+    *{
+        width: 100%;
+    }
+    @include vars.sp{
+    }
+}
+
+

@@ -1,0 +1,32 @@
+
+@use "style/var" as v ;
+
+.footer{
+    background-color: v.$back-color;
+    padding: 1rem 2rem;
+    padding-bottom: 20%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+
+    span{
+        @include v.fs-max ;
+        font-weight: normal;
+
+        @include v.sp{
+            @include v.fs-large ;
+        }
+    }
+    ul{
+        li{
+            @include v.fs-normal ;
+            text-align: right;
+            margin-bottom: 1rem;
+            color: rgb(104, 104, 104) ;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

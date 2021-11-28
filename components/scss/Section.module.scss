@@ -1,0 +1,31 @@
+@use "style/var" as vars;
+
+.section{
+    padding: 1.5rem 1.5rem;
+    color:vars.$section-fore-color;
+    background: vars.$section-back-color;
+    // margin: 1rem 0;
+    margin-bottom: 1px;
+    transition: vars.$transition;
+    background-size: cover;
+    background-repeat: none;
+
+    transform: translateY(100px);
+    opacity: 0;
+    &.open{
+        transform: translateY(0);
+        opacity: 1;
+    }    
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @include vars.sp{
+        padding: 1.2rem 0.5rem;
+    }
+}
+

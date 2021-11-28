@@ -1,0 +1,31 @@
+
+@use "style/var" as v ;
+
+.button{
+    padding: 1em 1.2em;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color:white;
+    background: v.$theme-color;
+    transition: v.$transition;
+    text-align: center;
+    &.disable{
+        background-color: v.$back-color;
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    &:hover{
+        transition: v.$transition;
+        transform: scale(1.05);
+    }
+    &:active{
+        transition: v.$transition;
+        opacity: 0.8;
+    }
+    @include v.sp{
+        padding: 0.5em 0.5em;
+    }
+}
+
+

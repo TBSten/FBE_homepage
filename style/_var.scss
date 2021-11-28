@@ -1,0 +1,89 @@
+//color
+//base
+$fore-color: black ;
+$back-color: rgb(228, 228, 228);
+//theme
+$theme-color:#3f51b5 ;
+$theme-darker-color: rgb(8, 34, 104) ;
+$theme-lighter-color: rgb(12, 74, 243) ;
+//pallete
+$pri-color:$theme-color;
+$sec-color:#f50057;
+
+//section
+$section-fore-color:$fore-color;
+$section-back-color:rgba(255, 255, 255, 1);
+
+//transition
+$transition:0.3s;
+
+$breakpoint: 560px ;
+
+@mixin sp {
+    @media screen and (max-width:$breakpoint) {
+        @content ;
+    }
+}
+
+@mixin fs($pc,$sp){
+    font-size: $pc;
+    @include sp{
+        font-size: $sp;
+    }
+}
+@mixin fs-max{
+    @include fs(2.8rem,2.0rem);
+}
+@mixin fs-large{
+    @include fs(2.3rem,2.3rem);
+}
+@mixin fs-normal{
+    @include fs(1.2rem,1.2rem);
+}
+@mixin fs-small{
+    @include fs(1.0rem,1.0rem);
+}
+@mixin fs-min{
+    @include fs(0.8rem,0.8rem);
+}
+
+@mixin basic-in-section{
+    h1{
+        @include fs-max ;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    h2{
+        border-bottom: solid 1px $theme-color;
+        padding-left: 0.1em;
+        margin-bottom: 0.5rem;
+        @include fs-large ;
+    }
+    h3{
+        margin: 0.2rem 0;
+        padding: 0.5rem 0 0.5rem 0.25rem;
+        border-left: 5px solid $theme-color;
+        @include fs-normal ;
+        font-weight: bold;
+    }
+    code{
+        display: inline-block;
+        background: rgb(243, 243, 243);
+        border: solid 1px rgb(192, 192, 192);
+        border-radius: 10px;
+        padding: 0.25em 0.5em;
+        margin: 0 0.25em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    ul{
+        list-style: disc;
+        padding-left: 2rem;
+        margin: 0.25em 0;
+        li{}
+    }
+    p{
+        margin: 0.75rem 0;
+        line-height: 1.5em;
+    }
+}
+

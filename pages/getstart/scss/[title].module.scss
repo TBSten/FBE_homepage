@@ -1,0 +1,69 @@
+
+@use "style/var" as v ;
+
+
+.getstart{
+    line-height: 1.5rem;
+
+    @mixin h(){
+        margin-top: 1rem;
+        margin-bottom: 0.25rem;
+        line-height: initial;
+    }
+    h1{
+        @include h ;
+        @include v.fs-max ;
+    }
+    h2{
+        @include h ;
+        @include v.fs-large ;
+    }
+    h3{
+        @include h ;
+        @include v.fs-normal ;
+    }
+    h4{
+        @include h ;
+        @include v.fs-small ;
+    }
+    h5{
+        @include h ;
+        @include v.fs-min ;
+    }
+    .space{
+        margin: 1rem 0;
+    }
+    pre{
+        margin: 0.75rem 0;
+        code{
+            width: 100%;
+            padding: 1rem !important;
+        }
+    }
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imgLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    .imgCon{
+        display: inline-block;
+        width: 80%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.253);
+        @include v.sp{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+

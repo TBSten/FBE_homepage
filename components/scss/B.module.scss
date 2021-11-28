@@ -1,0 +1,7 @@
+
+@use "style/var" as v ;
+
+b.b{
+    font-size: 1.05em;
+    color: v.$theme-color;
+}

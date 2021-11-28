@@ -32,3 +32,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# env file
+.env
+
+# for me files
+FORME.md
+
+
+

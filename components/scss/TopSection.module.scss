@@ -1,0 +1,16 @@
+@use "style/var" as v ;
+
+.top{
+    background-color: v.$back-color;
+    width: 100%;
+    min-height: 35vh;
+    // margin: 2.5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
