@@ -5,7 +5,9 @@ $back-color: rgb(228, 228, 228);
 //theme
 $theme-color:#3f51b5 ;
 $theme-darker-color: rgb(8, 34, 104) ;
+$theme-darker-opa-color: rgb(8, 34, 104, 0.3) ;
 $theme-lighter-color: rgb(12, 74, 243) ;
+$theme-lighter-opa-color: rgb(12, 74, 243, 0.3) ;
 //pallete
 $pri-color:$theme-color;
 $sec-color:#f50057;
@@ -60,11 +62,29 @@ $breakpoint: 560px ;
         @include fs-large ;
     }
     h3{
-        margin: 0.2rem 0;
-        padding: 0.5rem 0 0.5rem 0.25rem;
+        margin-top: 0.75em;
+        margin-bottom: 0.5em;
+        padding: 0.5rem 0 0.5rem 0.5rem;
         border-left: 5px solid $theme-color;
         @include fs-normal ;
         font-weight: bold;
+    }
+    h4{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-left: 0.75em;
+        @include fs-small() ;
+        font-weight: bold;
+        position: relative;
+        &::after{
+            content: " ";
+            position: absolute;
+            left: 0.25em;
+            bottom: -0.1em;
+            width: 30%;
+            border-bottom: 0.6em $theme-lighter-opa-color solid;
+            z-index: -1;
+        }
     }
     code{
         display: inline-block;
@@ -79,11 +99,31 @@ $breakpoint: 560px ;
         list-style: disc;
         padding-left: 2rem;
         margin: 0.25em 0;
-        li{}
+        li{
+            @include fs-normal() ;
+        }
     }
     p{
         margin: 0.75rem 0;
         line-height: 1.5em;
     }
+    hr{
+        margin: 1.5rem 0;
+    }
 }
+
+
+
+
+
+
+@mixin test {
+    transition: $transition;
+    &:hover{
+        background-color: #3f51b5;
+        transition: $transition;
+    }
+}
+
+
 

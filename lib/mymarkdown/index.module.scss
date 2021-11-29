@@ -16,6 +16,18 @@
     }
 }
 
+.p{
+    margin: 0.5em 0;
+}
+section{
+    .p:last-child{
+        margin-bottom: 1em;
+    }
+}
+.round{
+    margin: 0.75em 1em;
+    padding: 0.25em;
+}
 
 
 

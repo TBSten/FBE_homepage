@@ -42,10 +42,15 @@ export const MyMarkdown: FC<MyMarkdownProps> = ({children}) => {
                         },
                     },
                     p: {
-                        component: "div",
+                        component: (props)=>{
+                            return <div className={styles.p}> {props.children} </div> ;
+                        },
                     },
                     Section: {
                         component: Section,
+                    },
+                    Round: {
+                        component: (props)=><div className={styles.round}>{props.children}</div>
                     },
                     img: {
                         component: (props) => (
@@ -59,6 +64,9 @@ export const MyMarkdown: FC<MyMarkdownProps> = ({children}) => {
                         ),
                     },
                     em: {
+                        component: B,
+                    },
+                    strong:{
                         component: B,
                     },
                 },

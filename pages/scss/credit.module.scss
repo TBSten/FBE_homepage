@@ -1,0 +1,26 @@
+
+@use "style/var" as v ;
+
+.dl{
+    dt{
+        margin-top: 2rem;
+        @include v.fs-normal ;
+        font-weight: bold;
+    }
+    dd{
+        @include v.fs-large ;
+        margin-left: 1em;
+        &.p{
+            @include v.fs-small ;
+        }
+    }
+    a{
+        color: rgb(76, 41, 235) ;
+        transition: v.$transition;
+        &:hover{
+            opacity: 0.5;
+            transition: v.$transition;
+        }
+    }
+}
+

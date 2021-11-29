@@ -2,7 +2,7 @@ import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
 import Link from "components/Link";
 import Section from "components/Section";
-import { DocsData, getDocs } from "lib/docs";
+import { DocsData, getTopDocs } from "lib/docs";
 import { GetServerSideProps } from "next";
 import React, { FC } from "react";
 
@@ -51,7 +51,7 @@ export default Docs;
 export const getServerSideProps: GetServerSideProps<DocsProps> = async (
     ctx
 ) => {
-    const docs = getDocs();
+    const docs = getTopDocs();
     return {
         props: {
             docs,

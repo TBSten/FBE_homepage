@@ -26,6 +26,13 @@ export function getDocs(): DocsData[] {
     },[] as DocsData[]);
     return ans ;
 }
+export function getTopDocs(): DocsData[]{
+    const filePath = path.join(process.cwd(), "datasets", "docs", "docs.json");
+    const json = fs.readFileSync(filePath, { encoding: "utf-8" });
+    const docs = JSON.parse(json);
+    const tops = docs.values as DocsData[];
+    return tops ;
+}
 
 export function getDoc(id: string): DocsData | null {
     const docs = getDocs();
@@ -70,6 +77,23 @@ export function getPrevNext(
     id: string
 ): { prev: DocsData|null; next: DocsData|null } | null {
     const docs = getDocs();
+    const doc = getDoc(id) ;
+    if(doc.pages){
+        const prevIdx = docs.reduce((p,v,i)=>{
+            if(doc.id === v.id){
+                return i ;
+            }
+            return p ;
+        },-1) -1;
+        console.log(prevIdx,{
+            prev:docs[prevIdx]?docs[prevIdx]:null,
+            next:doc.pages[0],
+        });
+        return {
+            prev:docs[prevIdx],
+            next:doc.pages[0],
+        } ;
+    }
     let idx = -1;
     docs.forEach((doc, i) => {
         if (doc.id === id) {
@@ -83,7 +107,6 @@ export function getPrevNext(
             prev,
             next,
         } ;
-    } else {
-        return null;
     }
+    return null;
 }
