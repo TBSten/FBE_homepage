@@ -1,10 +1,8 @@
 import B from "components/B";
-import { GetServerSideProps, GetServerSidePropsResult } from "next";
-import React, { FC, VFC } from "react";
+import { GetStaticPaths, GetStaticProps } from "next";
+import React, { FC, } from "react";
 import Image from "next/image";
 
-import html from "html";
-import markdown from "markdown";
 import Markdown from "markdown-to-jsx";
 
 import styles from "./scss/[title].module.scss";
@@ -165,7 +163,7 @@ const GetStart: FC<getStartServerSideProps> = ({
 };
 export default GetStart;
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getStaticProps: GetStaticProps<getStartServerSideProps> = async (context) => {
     try {
         const id = context.params.id as string;
         const { title } = getGetstart(id);
@@ -190,3 +188,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         notFound: true,
     };
 };
+
+export const getStaticPaths: GetStaticPaths = async(ctx)=>{
+    const paths = getGetstarts().map(getstart=>`/getstart/${getstart.id}`);
+    return {
+        paths,
+        fallback:false,
+    } ;
+};
+
+
+

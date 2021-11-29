@@ -13,7 +13,7 @@ import styles from "./scss/getstart.module.scss";
 
 import img_ss_04 from "image/ss_04.png";
 import img_ss_05 from "image/ss_05.png";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
 import { getGetstarts, GetstartData } from "lib/getstart";
 import Link from "components/Link";
 import Head from "next/head";
@@ -69,7 +69,18 @@ const GetStart: FC<GetStartProps> = ({ getstarts }) => {
 
 export default GetStart;
 
-export const getServerSideProps: GetServerSideProps<GetStartProps> = async (
+// export const getServerSideProps: GetServerSideProps<GetStartProps> = async (
+//     context
+// ) => {
+//     const getstarts = getGetstarts();
+//     return {
+//         props: {
+//             getstarts,
+//         },
+//     };
+// };
+
+export const getStaticProps: GetStaticProps<GetStartProps> = async (
     context
 ) => {
     const getstarts = getGetstarts();
@@ -79,3 +90,5 @@ export const getServerSideProps: GetServerSideProps<GetStartProps> = async (
         },
     };
 };
+
+
