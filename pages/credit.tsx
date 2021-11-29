@@ -1,6 +1,7 @@
 import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
 import Section from "components/Section";
+import Head from "next/head";
 import React, { FC } from "react";
 
 import styles from "./scss/credit.module.scss";
@@ -8,6 +9,14 @@ import styles from "./scss/credit.module.scss";
 const Credit: FC<{}> = ({}) => {
     return (
         <Base>
+            <Head>
+                <title>project FBE - クレジット -</title>
+                <meta
+                    name="description"
+                    content="Flowchart Build Executor はフローチャートを 作成 ・  実行する ためのWebツールです。ブラウザのみで動作し、アカウント登録の必要はありません。"
+                />
+            </Head>
+
             <BaseContent>
                 <Section>
                     <h1>クレジット</h1>
@@ -23,12 +32,22 @@ const Credit: FC<{}> = ({}) => {
                         <dd>
                             TBSten
                             <ul>
-                                <li><a href="mailto://programmingcafeteria@gmail.com">メール</a></li>
-                                <li><a href="https://twitter.com/o2MCNTc60FpTAW3">Twitter</a></li>
-                                <li><a href="https://tbsten.hatenablog.com/">はてなブログ</a></li>
+                                <li>
+                                    <a href="mailto://programmingcafeteria@gmail.com">
+                                        メール
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/o2MCNTc60FpTAW3">
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://tbsten.hatenablog.com/">
+                                        はてなブログ
+                                    </a>
+                                </li>
                             </ul>
-                            
-
                         </dd>
 
                         <dt>Tech</dt>
@@ -48,9 +67,7 @@ const Credit: FC<{}> = ({}) => {
                                     FlowchartBuildExecutor(以下FBE)の著作権はTBStenに帰属しますが、
                                     日本国の法律の範囲内かつ常識の範囲内であればいかなる利用も基本的には許容します。
                                 </li>
-                                <li>
-                                    使用料などを要求することもありません。
-                                </li>
+                                <li>使用料などを要求することもありません。</li>
                                 <li>
                                     万が一上記の範囲外での使用をした場合は著作権者自身から利用の停止を求めることがあり、
                                     その場合は利用者は著作権者の指示に従うこととします。
@@ -59,7 +76,9 @@ const Credit: FC<{}> = ({}) => {
                             最低限の範囲のみ提示しましたが、FBEは以下のようなユースケースを
                             想定しています。ぜひご活用ください。もちろんこれ以外の利用も可能です。
                             <ul>
-                                <li>教育機関などでのプログラミング及びアルゴリズムの学習</li>
+                                <li>
+                                    教育機関などでのプログラミング及びアルゴリズムの学習
+                                </li>
                                 <li>各種SNSでのフローチャートの共有</li>
                             </ul>
                         </dd>

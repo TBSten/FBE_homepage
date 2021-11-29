@@ -4,23 +4,23 @@ import Link from "components/Link";
 import Section from "components/Section";
 import { DocsData, getTopDocs } from "lib/docs";
 import { GetServerSideProps } from "next";
+import Head from "next/head";
 import React, { FC } from "react";
 
 interface DocsProps {
     docs: DocsData[];
 }
 
-function DocLi({doc}:{doc:DocsData}) {
+function DocLi({ doc }: { doc: DocsData }) {
     return (
         <li key={doc.id}>
             <Link href={`/docs/${doc.id}`}>{doc.title}</Link>
             <ul>
-                {doc.pages?
-                doc.pages.map(page=>(
-                    <DocLi doc={page} key={page.id}/>
-                ))
-                :
-                ""}
+                {doc.pages
+                    ? doc.pages.map((page) => (
+                          <DocLi doc={page} key={page.id} />
+                      ))
+                    : ""}
             </ul>
         </li>
     );
@@ -28,6 +28,14 @@ function DocLi({doc}:{doc:DocsData}) {
 const Docs: FC<DocsProps> = ({ docs }) => {
     return (
         <Base>
+            <Head>
+                <title>project FBE - ドキュメント -</title>
+                <meta
+                    name="description"
+                    content="Flowchart Build Executor はフローチャートを 作成 ・  実行する ためのWebツールです。ブラウザのみで動作し、アカウント登録の必要はありません。"
+                />
+            </Head>
+
             <BaseContent>
                 <Section>
                     <h1>総合ドキュメント</h1>
@@ -38,8 +46,8 @@ const Docs: FC<DocsProps> = ({ docs }) => {
                 <Section>
                     <h2>目次</h2>
                     <ul>
-                        {docs.map(doc=>(
-                            <DocLi doc={doc} key={doc.id}/>
+                        {docs.map((doc) => (
+                            <DocLi doc={doc} key={doc.id} />
                         ))}
                     </ul>
                 </Section>

@@ -8,38 +8,45 @@ import { MyMarkdown } from "lib/mymarkdown";
 import LinkButton from "components/LinkButton";
 import { getPrevNext } from "lib/docs";
 
-import styles from "./scss/[id].module.scss" ;
+import styles from "./scss/[id].module.scss";
+import Head from "next/head";
 
 interface PrevNextProps {
-    prev:DocsData|null;
-    next:DocsData|null;
+    prev: DocsData | null;
+    next: DocsData | null;
 }
-const PrevNext:FC<PrevNextProps> =({prev,next})=>{
-    const prevHref = `/docs/${prev?prev.id:""}` ;
-    const nextHref = `/docs/${next?next.id:""}` ;
+const PrevNext: FC<PrevNextProps> = ({ prev, next }) => {
+    const prevHref = `/docs/${prev ? prev.id : ""}`;
+    const nextHref = `/docs/${next ? next.id : ""}`;
     return (
         <div className={styles.prevNext}>
-            <LinkButton 
-                href={prevHref}
-                disable={!prev?true:false}>
-                前</LinkButton>
+            <LinkButton href={prevHref} disable={!prev ? true : false}>
+                前
+            </LinkButton>
             |
-            <LinkButton 
-                href={nextHref}
-                disable={!next?true:false}>
-                次</LinkButton>
+            <LinkButton href={nextHref} disable={!next ? true : false}>
+                次
+            </LinkButton>
         </div>
-    ) ;
-} ;
+    );
+};
 
 interface DocProps {
-    content:string;
-    prev:DocsData|null;
-    next:DocsData|null;
+    content: string;
+    prev: DocsData | null;
+    next: DocsData | null;
 }
-const Doc :FC<DocProps> = ({content,prev,next})=>{
+const Doc: FC<DocProps> = ({ content, prev, next }) => {
     return (
         <Base>
+            <Head>
+                <title>project FBE - ドキュメント -</title>
+                <meta
+                    name="description"
+                    content="Flowchart Build Executor はフローチャートを 作成 ・  実行する ためのWebツールです。ブラウザのみで動作し、アカウント登録の必要はありません。"
+                />
+            </Head>
+
             <BaseContent>
                 <Section>
                     <h1>総合ドキュメント</h1>
@@ -47,36 +54,30 @@ const Doc :FC<DocProps> = ({content,prev,next})=>{
                     基本操作記号のオプションなどの各要素について
                     詳細に解説します。
                 </Section>
-                <PrevNext prev={prev} next={next}/>
-                <MyMarkdown>
-                    {content}
-                </MyMarkdown>                
-                <PrevNext prev={prev} next={next}/>
-
+                <PrevNext prev={prev} next={next} />
+                <MyMarkdown>{content}</MyMarkdown>
+                <PrevNext prev={prev} next={next} />
             </BaseContent>
         </Base>
-    ) ;
+    );
 };
 
-export default Doc ;
-export const getServerSideProps :GetServerSideProps<DocProps> = async (ctx)=>{
-    try{
-        const id = ctx.params.id as string ;
-        const content = getContent(id) ;
-        const {prev,next} = getPrevNext(id);
+export default Doc;
+export const getServerSideProps: GetServerSideProps<DocProps> = async (ctx) => {
+    try {
+        const id = ctx.params.id as string;
+        const content = getContent(id);
+        const { prev, next } = getPrevNext(id);
         return {
-            props:{
+            props: {
                 content,
                 prev,
                 next,
             },
-        } ;
-    }catch(e){
+        };
+    } catch (e) {
         return {
-            notFound:true,
-        } ;
+            notFound: true,
+        };
     }
-} ;
-
-
-
+};

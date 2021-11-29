@@ -16,6 +16,7 @@ import img_ss_03 from "image/ss_03.png" ;
 import styles from "./scss/index.module.scss";
 import ImageSection from "components/ImageSection";
 import B from "components/B";
+import Head from "next/head";
 
 function ImageLine({children}){
     return (
@@ -30,6 +31,11 @@ function ImageLine({children}){
 export default function Home() {
     return (
         <Base className={styles.container} footer={false} >
+            <Head>
+                <title>project FBE - フローチャートを より身近に -</title>
+                <meta name="description" content="Flowchart Build Executor はフローチャートを 作成 ・  実行する ためのWebツールです。ブラウザのみで動作し、アカウント登録の必要はありません。" />
+            </Head>
+            
             <Section className={styles.section} style={{backgroundImage:`url(${img_bg_top.src})`}}>
                 <div className={styles.detail}>
                     <h1>アルゴリズム初学者のためのフローチャートビルドツール</h1>
