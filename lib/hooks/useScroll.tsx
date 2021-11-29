@@ -10,5 +10,5 @@ export default function useScroll(callback:(e?:Event)=>void){
         return ()=>{
             window.removeEventListener("scroll",handler);
         } ;
-    },[]);
+    },[callback]);
 }

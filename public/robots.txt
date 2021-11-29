@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://project-fbe.vercel.app
+
+# Sitemaps
+Sitemap: https://project-fbe.vercel.app/sitemap.xml

@@ -20,13 +20,13 @@ const ImageSection: FC<ImageSectionProps> = (props) => {
                 <>
                     <div className={styles.detail}>{children}</div>
                     <div className={styles.img}>
-                        <Image src={src} />
+                        <Image src={src} alt="fbe image"/>
                     </div>
                 </>
             ) : (
                 <>
                     <div className={styles.img}>
-                        <Image src={src} />
+                        <Image src={src} alt="fbe image"/>
                     </div>
                     <div className={styles.detail}>{children}</div>
                 </>

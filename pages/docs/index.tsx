@@ -2,8 +2,8 @@ import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
 import Link from "components/Link";
 import Section from "components/Section";
-import { DocsData, getTopDocs } from "lib/docs";
-import { GetServerSideProps } from "next";
+import { DocsData, getDocs, getTopDocs } from "lib/docs";
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import React, { FC } from "react";
 
@@ -56,7 +56,18 @@ const Docs: FC<DocsProps> = ({ docs }) => {
     );
 };
 export default Docs;
-export const getServerSideProps: GetServerSideProps<DocsProps> = async (
+// export const getServerSideProps: GetServerSideProps<DocsProps> = async (
+//     ctx
+// ) => {
+//     const docs = getTopDocs();
+//     return {
+//         props: {
+//             docs,
+//         },
+//     };
+// };
+
+export const getStaticProps: GetStaticProps<DocsProps> = async (
     ctx
 ) => {
     const docs = getTopDocs();
@@ -66,3 +77,9 @@ export const getServerSideProps: GetServerSideProps<DocsProps> = async (
         },
     };
 };
+
+
+
+
+
+

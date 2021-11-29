@@ -50,7 +50,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.img}>
-                    <Image src={img_kc}/>
+                    <Image src={img_kc} alt="fbe image"/>
                 </div>
             </Section>
             <ImageSection src={img_ss_02}>
@@ -77,7 +77,7 @@ export default function Home() {
                     面倒な会員登録なしですぐにFBEを開始できます！
                 </p>
                 <ImageLine>
-                    <Image src={img_wd} />
+                    <Image src={img_wd} alt="fbe image"/>
                 </ImageLine>
             </ContentSection>
             <ImageSection src={img_ss_03} reverse>

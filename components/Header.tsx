@@ -64,7 +64,7 @@ export default function Header() {
                     ))}
                 </ul>
                 <div className={styles.icon} onClick={handleOpenMenu}>
-                    <Image src={img_menu}/>
+                    <Image src={img_menu} alt="fbe image"/>
                 </div>
             </header>
 

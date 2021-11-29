@@ -1,8 +1,8 @@
 import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
 import React, { FC } from "react";
-import { DocsData, getContent } from "lib/docs";
+import { DocsData, getContent, getDocs } from "lib/docs";
 import Section from "components/Section";
 import { MyMarkdown } from "lib/mymarkdown";
 import LinkButton from "components/LinkButton";
@@ -63,7 +63,26 @@ const Doc: FC<DocProps> = ({ content, prev, next }) => {
 };
 
 export default Doc;
-export const getServerSideProps: GetServerSideProps<DocProps> = async (ctx) => {
+// export const getServerSideProps: GetServerSideProps<DocProps> = async (ctx) => {
+//     try {
+//         const id = ctx.params.id as string;
+//         const content = getContent(id);
+//         const { prev, next } = getPrevNext(id);
+//         return {
+//             props: {
+//                 content,
+//                 prev,
+//                 next,
+//             },
+//         };
+//     } catch (e) {
+//         return {
+//             notFound: true,
+//         };
+//     }
+// };
+
+export const getStaticProps: GetStaticProps<DocProps> = async (ctx) => {
     try {
         const id = ctx.params.id as string;
         const content = getContent(id);
@@ -81,3 +100,13 @@ export const getServerSideProps: GetServerSideProps<DocProps> = async (ctx) => {
         };
     }
 };
+
+export const getStaticPaths: GetStaticPaths = async (ctx)=>{
+    const paths = getDocs().map(doc=>`/docs/${doc.id}`) ;
+    return {
+        paths,
+        fallback: false,
+    } ;
+} ;
+
+
