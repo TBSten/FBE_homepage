@@ -1,0 +1,11 @@
+
+.linedLink{
+    color: rgb(0, 0, 255);
+    &:hover{
+        text-decoration: underline;
+    }
+    &:visited{
+        color: purple;
+    }
+}
+

@@ -17,6 +17,7 @@ import styles from "./scss/index.module.scss";
 import ImageSection from "components/ImageSection";
 import B from "components/B";
 import Head from "next/head";
+import LinedLink from "components/LinedLink";
 
 function ImageLine({children}){
     return (
