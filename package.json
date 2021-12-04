@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild":"next-sitemap"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "csv-parse": "^5.0.3",
@@ -17,6 +17,7 @@
     "markdown-to-jsx": "^7.1.3",
     "markdown-to-txt": "^2.0.0",
     "next": "12.0.4",
+    "next-pwa": "^5.4.1",
     "next-sitemap": "^1.6.203",
     "react": "17.0.2",
     "react-dom": "17.0.2"

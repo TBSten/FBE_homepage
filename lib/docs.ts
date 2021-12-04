@@ -85,10 +85,10 @@ export function getPrevNext(
             }
             return p ;
         },-1) -1;
-        console.log(prevIdx,{
-            prev:docs[prevIdx]?docs[prevIdx]:null,
-            next:doc.pages[0],
-        });
+        // console.log(prevIdx,{
+        //     prev:docs[prevIdx]?docs[prevIdx]:null,
+        //     next:doc.pages[0],
+        // });
         return {
             prev:docs[prevIdx],
             next:doc.pages[0],

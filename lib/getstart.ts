@@ -53,7 +53,7 @@ export function getPrev(id:string) :GetstartData|null{
             idx = i ;
         }
     });
-    console.log("---",idx)
+    // console.log("---",idx)
     if(idx >= 0){
         if(idx === 0){
             //先頭

@@ -27,6 +27,7 @@ import {
 import { SideBarItem } from "components/SideBar";
 import Link from "components/Link";
 import Head from "next/head";
+import { MyMarkdown } from "lib/mymarkdown";
 
 const images: { [key: string]: StaticImageData } = {
     img_ss_01,
@@ -47,50 +48,55 @@ function ImageLine({ src }: { src: StaticImageData | string }) {
 }
 
 const Body: FC<{ children: string }> = ({ children }) => {
+    // return (
+    //     <Markdown
+    //         options={{
+    //             overrides: {
+    //                 a: {
+    //                     component: (props) => {
+    //                         return (
+    //                             <>
+    //                                 <LinkButton
+    //                                     href={props.href}
+    //                                     className={styles.space}
+    //                                 >
+    //                                     {props.children}
+    //                                 </LinkButton>
+    //                             </>
+    //                         );
+    //                     },
+    //                 },
+    //                 p: {
+    //                     component: "div",
+    //                 },
+    //                 Section: {
+    //                     component: Section,
+    //                 },
+    //                 img: {
+    //                     component: (props) => (
+    //                         <ImageLine
+    //                             src={
+    //                                 images[props.src]
+    //                                     ? images[props.src]
+    //                                     : props.src
+    //                             }
+    //                         />
+    //                     ),
+    //                 },
+    //                 em: {
+    //                     component: B,
+    //                 },
+    //             },
+    //         }}
+    //     >
+    //         {children}
+    //     </Markdown>
+    // );
     return (
-        <Markdown
-            options={{
-                overrides: {
-                    a: {
-                        component: (props) => {
-                            return (
-                                <>
-                                    <LinkButton
-                                        href={props.href}
-                                        className={styles.space}
-                                    >
-                                        {props.children}
-                                    </LinkButton>
-                                </>
-                            );
-                        },
-                    },
-                    p: {
-                        component: "div",
-                    },
-                    Section: {
-                        component: Section,
-                    },
-                    img: {
-                        component: (props) => (
-                            <ImageLine
-                                src={
-                                    images[props.src]
-                                        ? images[props.src]
-                                        : props.src
-                                }
-                            />
-                        ),
-                    },
-                    em: {
-                        component: B,
-                    },
-                },
-            }}
-        >
+        <MyMarkdown>
             {children}
-        </Markdown>
-    );
+        </MyMarkdown>
+    ) ;
 };
 
 const GetStartSide: FC<{ getstarts: GetstartData[] }> = ({ getstarts }) => {

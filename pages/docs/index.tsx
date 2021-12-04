@@ -2,6 +2,7 @@ import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
 import Link from "components/Link";
 import Section from "components/Section";
+import { SideBarItem } from "components/SideBar";
 import { DocsData, getDocs, getTopDocs } from "lib/docs";
 import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
@@ -11,7 +12,7 @@ interface DocsProps {
     docs: DocsData[];
 }
 
-function DocLi({ doc }: { doc: DocsData }) {
+export function DocLi({ doc }: { doc: DocsData }) {
     return (
         <li key={doc.id}>
             <Link href={`/docs/${doc.id}`}>{doc.title}</Link>
@@ -25,6 +26,18 @@ function DocLi({ doc }: { doc: DocsData }) {
         </li>
     );
 }
+export const DocsSideBar :FC<{docs:DocsData[]}> = ({docs})=>{
+    return (
+        <SideBarItem>
+            <h3>ドキュメント</h3>
+            <ul>
+                {docs.map(doc=>(
+                    <DocLi doc={doc} key={doc.id}/>
+                ))}
+            </ul>
+        </SideBarItem>
+    ) ;
+} ;
 const Docs: FC<DocsProps> = ({ docs }) => {
     return (
         <Base>
@@ -36,7 +49,7 @@ const Docs: FC<DocsProps> = ({ docs }) => {
                 />
             </Head>
 
-            <BaseContent>
+            <BaseContent side={<DocsSideBar docs={docs}/>}>
                 <Section>
                     <h1>総合ドキュメント</h1>
                     ここではFBEにおける

@@ -24,10 +24,78 @@ section{
         margin-bottom: 1em;
     }
 }
+.tableCon{
+    width: 100%;
+    overflow: auto;
+    margin: 1.5rem 0;
+    .table{
+        min-width: max-content;
+    }
+}
 .round{
     margin: 0.75em 1em;
     padding: 0.25em;
 }
+
+@mixin alert($color){
+    background-color: $color;
+    padding: 1rem 3rem;
+    margin: 1.5rem 1rem;
+    position: relative;
+    @content ;
+    @include v.sp{
+        padding: 1rem ;
+        margin: 1.5rem 0;
+    }
+}
+
+.red,
+.alert{
+    @include alert(rgb(255, 223, 223)) ;
+}
+
+.green,
+.success{
+    @include alert(rgb(196, 255, 162)) ;
+}
+.blue{
+    @include alert(#cfe4ffa8) ;
+}
+
+
+.howto{
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: #cfe4ffa8;
+
+    ul,ol{
+        list-style: decimal !important;
+        li{
+            margin: 1rem 0;
+        }
+    }
+
+    position: relative;
+    &::before{
+        content: "HowTo";
+        position: absolute;
+        left: 0.5em;
+        top: -1em;
+        box-sizing: border-box;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 0.8rem;
+        font-style: italic;
+        border-bottom: solid 2px v.$theme-color;
+        display: inline-block;
+        min-width: 30%;
+    }
+
+}
+
+
+
+
 
 
 

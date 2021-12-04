@@ -1,8 +1,8 @@
 import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
-import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import React, { FC } from "react";
-import { DocsData, getContent, getDocs } from "lib/docs";
+import { DocsData, getContent, getDocs, getTopDocs } from "lib/docs";
 import Section from "components/Section";
 import { MyMarkdown } from "lib/mymarkdown";
 import LinkButton from "components/LinkButton";
@@ -10,6 +10,7 @@ import { getPrevNext } from "lib/docs";
 
 import styles from "./scss/[id].module.scss";
 import Head from "next/head";
+import { DocsSideBar } from ".";
 
 interface PrevNextProps {
     prev: DocsData | null;
@@ -35,8 +36,9 @@ interface DocProps {
     content: string;
     prev: DocsData | null;
     next: DocsData | null;
+    docs:DocsData[];
 }
-const Doc: FC<DocProps> = ({ content, prev, next }) => {
+const Doc: FC<DocProps> = ({ content, prev, next ,docs}) => {
     return (
         <Base>
             <Head>
@@ -47,7 +49,7 @@ const Doc: FC<DocProps> = ({ content, prev, next }) => {
                 />
             </Head>
 
-            <BaseContent>
+            <BaseContent side={<DocsSideBar docs={docs}/>}>
                 <Section>
                     <h1>総合ドキュメント</h1>
                     ここではFBEにおける
@@ -87,11 +89,13 @@ export const getStaticProps: GetStaticProps<DocProps> = async (ctx) => {
         const id = ctx.params.id as string;
         const content = getContent(id);
         const { prev, next } = getPrevNext(id);
+        const docs = getTopDocs() ;
         return {
             props: {
                 content,
                 prev,
                 next,
+                docs,
             },
         };
     } catch (e) {

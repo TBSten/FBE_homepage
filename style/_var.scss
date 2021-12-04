@@ -89,10 +89,10 @@ $breakpoint: 560px ;
     code{
         display: inline-block;
         background: rgb(243, 243, 243);
-        border: solid 1px rgb(192, 192, 192);
-        border-radius: 10px;
-        padding: 0.25em 0.5em;
-        margin: 0 0.25em;
+        // border: solid 1px rgb(192, 192, 192);
+        // border-radius: 10px;
+        // padding: 0.25em 0.5em;
+        // margin: 0 0.25em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     ul{
@@ -109,6 +109,35 @@ $breakpoint: 560px ;
     }
     hr{
         margin: 1.5rem 0;
+    }
+    table{
+        width: 100%;
+        td,th{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 0.5em;
+        }
+        tr:nth-child(2n+1){
+            background: rgb(255, 255, 255);
+        }
+        tr:nth-child(2n){
+            background: rgb(247, 247, 247);
+        }
+        thead{
+            td,th{
+                text-align: center;
+                @include fs-normal() ;
+                font-weight: bold;
+                background: $theme-color;
+                color:white;
+                border-top: none;
+
+            }
+        }
+        tbody{
+            td{}
+            th{}
+        }
     }
 }
 

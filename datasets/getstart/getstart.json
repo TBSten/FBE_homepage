@@ -2,7 +2,19 @@
     "values":[
         {
             "id":"introduction",
-            "title":"Hello World"
+            "title":"はじめてのFBE"
+        },
+        {
+            "id":"edit",
+            "title":"フローチャートを編集する"
+        },
+        {
+            "id":"saving",
+            "title":"フローチャートを保存する"
+        },
+        {
+            "id":"execute",
+            "title":"フローチャートを実行する"
         },
         {
             "id":"test",
