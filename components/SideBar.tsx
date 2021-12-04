@@ -23,7 +23,7 @@ const SideBar: FC<SideBarProps> = ({children}) => {
                     {pages.map(page=>(
                         <li key={page.label}>
                             <Link href={page.link}>
-                                {page.label}
+                                {page.jpName}
                             </Link>
                         </li>
                     ))}
