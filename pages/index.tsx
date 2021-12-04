@@ -103,7 +103,7 @@ export default function Home() {
                             とりあえずFBEを使ってみたい方はこちら
                         </p>
                         <LinkButton href={conf.FBE_URL} >
-                            今すぐ使ってみる
+                            使ってみる
                         </LinkButton>
                     </Card>
                     <Card>

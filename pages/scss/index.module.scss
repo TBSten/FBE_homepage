@@ -50,15 +50,28 @@ section.section{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-shadow: 5px 5px 5px #0c0c0c73;
+        @include v.sp{
+            text-shadow: none;
+        }
     }
     .img{
-        width: 100%;
-        height: auto;
+        width: max(300px,70vw);
+        height: 80%;
+        opacity: 0.6;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        right: 0;
+        z-index: -1;
         @include v.sp{
-            width: 70%;
+            padding-left: 0;
+            padding-right: 0;
+            width: 80%;
+            height: auto;
+            position: static;
+            opacity: 1;
         }
     }
 
@@ -67,10 +80,13 @@ section.section{
         font-weight: bold;
         margin: 2rem 0;
         color:v.$theme-color;
-        text-shadow: 5px 5px 5px #0c0c0c4f;
-
+        text-shadow: 5px 5px 10px #0c0c0c6b;
+        text-align: start;
+        line-height: 1.5em;
         @include v.sp{
-            font-size: 2rem;
+            font-size: 12vw;
+            text-align: center;
+            margin: 0;
         }
     }
     p{
@@ -80,6 +96,7 @@ section.section{
         @include v.sp{
             font-size: 1.1rem;
             margin: 1rem;
+            width: 90%;
         }
     }
     .btngroup{
@@ -98,7 +115,7 @@ section.section{
     grid-template-columns: repeat(3,1fr );
     gap:10px;
     margin-bottom: 50px;
-    padding: 1rem;
+    padding: 1rem 0;
     // background-color: v.$back-color;
     .card{
         text-align: center;

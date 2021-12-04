@@ -2,7 +2,7 @@ import Base from "components/layout.tsx/Base";
 import BaseContent from "components/layout.tsx/BaseContent";
 import Section from "components/Section";
 import Head from "next/head";
-import React, { FC } from "react";
+import React, { FC, VFC } from "react";
 
 import {
     AiOutlineMail as MailIcon,
@@ -19,7 +19,7 @@ import {
 
 import styles from "./scss/credit.module.scss";
 
-const Credit: FC<{}> = ({}) => {
+const Credit: VFC = () => {
     return (
         <Base>
             <Head>
