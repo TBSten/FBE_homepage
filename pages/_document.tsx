@@ -50,4 +50,4 @@ const MyDocument = () => {
         </Html>
     );
 };
-export default Document;
+export default MyDocument;
