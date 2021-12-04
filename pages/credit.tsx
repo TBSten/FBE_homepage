@@ -4,6 +4,19 @@ import Section from "components/Section";
 import Head from "next/head";
 import React, { FC } from "react";
 
+import {
+    AiOutlineMail as MailIcon,
+    AiOutlineTwitter as TwitterIcon,
+    AiFillGithub as GithubIcon,
+} from "react-icons/ai" ;
+import {
+    DiReact as ReactIcon ,
+} from "react-icons/di" ;
+import {
+    SiMaterialui as MUIIcon ,
+    SiNextdotjs as NextIcon ,
+} from "react-icons/si" ;
+
 import styles from "./scss/credit.module.scss";
 
 const Credit: FC<{}> = ({}) => {
@@ -34,11 +47,13 @@ const Credit: FC<{}> = ({}) => {
                             <ul>
                                 <li>
                                     <a href="mailto://programmingcafeteria@gmail.com">
+                                        <MailIcon />
                                         メール
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/o2MCNTc60FpTAW3">
+                                        <TwitterIcon />
                                         Twitter
                                     </a>
                                 </li>
@@ -52,10 +67,16 @@ const Credit: FC<{}> = ({}) => {
 
                         <dt>Tech</dt>
                         <dd>
-                            <a href="https://ja.reactjs.org/">React.js</a>
+                            <a href="https://ja.reactjs.org/">
+                                <ReactIcon />
+                                React.js
+                            </a>
                         </dd>
                         <dd>
-                            <a href="https://mui.com/">Material UI</a>
+                            <a href="https://mui.com/">
+                                <MUIIcon />
+                                Material UI
+                            </a>
                         </dd>
 
                         <dt>Lisence</dt>
@@ -67,7 +88,13 @@ const Credit: FC<{}> = ({}) => {
                                     FlowchartBuildExecutor(以下FBE)の著作権はTBStenに帰属しますが、
                                     日本国の法律の範囲内かつ常識の範囲内であればいかなる利用も基本的には許容します。
                                 </li>
-                                <li>使用料などを要求することもありません。</li>
+                                <li>
+                                    使用料など金銭を要求することもありません。
+                                </li>
+                                <li>
+                                    FBEの使用にあたって著作者は一切の責任を負いません。
+                                    自己責任でのご利用をお願いします。
+                                </li>
                                 <li>
                                     万が一上記の範囲外での使用をした場合は著作権者自身から利用の停止を求めることがあり、
                                     その場合は利用者は著作権者の指示に従うこととします。
@@ -86,6 +113,7 @@ const Credit: FC<{}> = ({}) => {
                         <dt>Source Code</dt>
                         <dd>
                             <a href="https://github.com/TBSten/FlowcharBuildExecutor-web">
+                                <GithubIcon />
                                 Github リポジトリ
                             </a>
                         </dd>
@@ -99,12 +127,17 @@ const Credit: FC<{}> = ({}) => {
 
                         <dt>Tech</dt>
                         <dd>
-                            <a href="https://nextjs.org/">Next.js</a>
+                            <a href="https://nextjs.org/">
+                                <NextIcon />
+                                Next.js
+                            </a>
                         </dd>
 
                         <dt>Images</dt>
                         <dd>
-                            <a href="https://storyset.com/">Storyset</a>
+                            <a href="https://storyset.com/">
+                                Storyset
+                            </a>
                         </dd>
                     </dl>
                 </Section>

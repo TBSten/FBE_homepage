@@ -12,6 +12,8 @@
     z-index: 10;
     span{
         font-size: 3rem;
+        display: flex;
+        align-items: center;
     }
     ul{
         display: flex;
@@ -108,5 +110,27 @@
     @include vars.sp{
     }
 }
-
+.drawer{
+    text-align: center;
+    padding: 1rem 0;
+    h1{
+        @include vars.fs-max ;
+        margin-bottom: 1rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            width: 100%;
+            padding: 0.8em 0;
+            @include vars.fs-normal ;
+            transition: vars.$transition;
+            &:hover{
+                background-color: vars.$theme-lighter-opa-color;
+                transition: vars.$transition;
+            }
+        }
+    }
+}
 

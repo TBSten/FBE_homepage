@@ -53,7 +53,6 @@ const Drawer :FC<DrawerProps> = ({open,onClose=()=>{},children})=>{
     return (
         <div className={classList} onClick={onClose}>
             <div className={styles.content} onClickCapture={(e)=>e.stopPropagation()}>
-                <h1>drawer</h1>
                 {children}
             </div>
         </div>
