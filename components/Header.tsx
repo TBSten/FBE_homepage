@@ -85,9 +85,11 @@ export default function Header() {
                     </h1>
                     <ul>
                         {menus.map((menu) => (
-                            <li key={menu.label}>
-                                <Link href={menu.link}>{menu.jpName}</Link>
-                            </li>
+                            <Link href={menu.link} className={styles.link} key={menu.label}>
+                                <li>
+                                    {menu.jpName}
+                                </li>
+                            </Link>
                         ))}
                     </ul>
                 </div>

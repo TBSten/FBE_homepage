@@ -1,3 +1,4 @@
+import ReactDOMServer from "react-dom/server" ;
 import B from "components/B";
 import Section from "components/Section";
 import React, { FC } from "react";
@@ -89,6 +90,36 @@ export const MyMarkdownCustoms = {
                 <table className={styles.table}>{props.children}</table>
             </div>
         ),
+    },
+    h1:{
+        component: (props)=>{
+            return <h1 id={props.children}>{props.children}</h1>
+        }
+    },
+    h2:{
+        component: (props)=>{
+            return <h2 id={props.children}>{props.children}</h2>
+        }
+    },
+    h3:{
+        component: (props)=>{
+            return <h3 id={props.children}>{props.children}</h3>
+        }
+    },
+    h4:{
+        component: (props)=>{
+            return <h4 id={props.children}>{props.children}</h4>
+        }
+    },
+    h5:{
+        component: (props)=>{
+            return <h5 id={props.children}>{props.children}</h5>
+        }
+    },
+    h6:{
+        component: (props)=>{
+            return <h6 id={props.children}>{props.children}</h6>
+        }
     },
 } ;
 

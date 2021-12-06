@@ -25,11 +25,16 @@ section{
     }
 }
 .tableCon{
-    width: 100%;
+    max-width: 100%;
     overflow: auto;
     margin: 1.5rem 0;
+    padding: 0.5rem 0;
     .table{
         min-width: max-content;
+        width: auto;
+        th,td{
+            max-width: 20vw;
+        }
     }
 }
 .round{

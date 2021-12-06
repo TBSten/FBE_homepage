@@ -16,6 +16,7 @@
         gap: 10px;
         .main{
             width: 100%;
+            min-width: 100%;
             // background: v.$back-color;
             @include v.basic-in-section ;
         }

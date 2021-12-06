@@ -5,52 +5,52 @@
             "title":"基本操作"
         },
         {
-            "id":"options",
-            "title":"オプション",
+            "id":"symbols",
+            "title":"記号",
             "pages":[
                 {
-                    "id":"option_terminal_start",
-                    "title":"はじめ端子記号のオプション"
+                    "id":"symbols_terminal_start",
+                    "title":"はじめ端子記号"
                 },
                 {
-                    "id":"option_terminal_end",
-                    "title":"おわり端子記号のオプション"
+                    "id":"symbols_terminal_end",
+                    "title":"おわり端子記号"
                 },
                 {
-                    "id":"option_calc",
-                    "title":"計算記号のオプション"
+                    "id":"symbols_calc",
+                    "title":"計算記号"
                 },
                 {
-                    "id":"option_data",
-                    "title":"データ記号のオプション"
+                    "id":"symbols_data",
+                    "title":"データ記号"
                 },
                 {
-                    "id":"option_while",
-                    "title":"繰り返し記号のオプション"
+                    "id":"symbols_while",
+                    "title":"繰り返し記号"
                 },
                 {
-                    "id":"option_for",
-                    "title":"回数繰り返し記号のオプション"
+                    "id":"symbols_for",
+                    "title":"回数繰り返し記号"
                 },
                 {
-                    "id":"option_doublebranch",
-                    "title":"分岐記号のオプション"
+                    "id":"symbols_doublebranch",
+                    "title":"分岐記号"
                 },
                 {
-                    "id":"option_switch",
-                    "title":"多分岐記号のオプション"
+                    "id":"symbols_switch",
+                    "title":"多分岐記号"
                 },
                 {
-                    "id":"option_prepare",
-                    "title":"準備記号のオプション"
+                    "id":"symbols_prepare",
+                    "title":"準備記号"
                 },
                 {
-                    "id":"option_process",
-                    "title":"処理記号のオプション"
+                    "id":"symbols_process",
+                    "title":"処理記号"
                 },
                 {
-                    "id":"option_flow",
-                    "title":"フローのオプション"
+                    "id":"symbols_flow",
+                    "title":"フロー"
                 }
             ]
         },
