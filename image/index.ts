@@ -5,14 +5,16 @@ import ss_04 from "./ss_04.png" ;
 import ss_05 from "./ss_05.png" ;
 import bg_top from "./bg-top.svg" ;
 import icon_menu from "./icon-menu.png" ;
+import vercel from "./vercel.svg" ;
 
-
-export const images:{[key :string]:StaticImageData} = {
+export const images = {
     ss_01,
     ss_02,
     ss_03,
     ss_04,
     ss_05,
     bg_top,
-} ;
+    icon_menu,
+    vercel,
+} as const;
 

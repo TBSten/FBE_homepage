@@ -3,6 +3,8 @@ import BaseContent from "components/layout.tsx/BaseContent";
 import Section from "components/Section";
 import Head from "next/head";
 import React, { FC, VFC } from "react";
+import Image from "next/image" ;
+import {images} from "image/index" ;
 
 import {
     AiOutlineMail as MailIcon,
@@ -138,6 +140,20 @@ const Credit: VFC = () => {
                             <a href="https://storyset.com/">
                                 Storyset
                             </a>
+                        </dd>
+
+                        <dt>Deploy</dt>
+                        <dd>
+                            <div>
+                                <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
+                                    <Image src={images.vercel} alt="vercel"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
+                                    Vercel
+                                </a>
+                            </div>
                         </dd>
                     </dl>
                 </Section>
