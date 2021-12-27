@@ -4,7 +4,7 @@
 .footer{
     background-color: v.$back-color;
     padding: 1rem 2rem;
-    padding-bottom: 20%;
+    padding-bottom: calc(10rem);
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 20px;

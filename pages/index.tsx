@@ -46,7 +46,9 @@ export default function Home() {
                     </p>
                     <div className={styles.btngroup}>
                         <LinkButton href={conf.FBE_URL} >
-                            {" >> "}今すぐ使ってみる{" >> "}
+                            {/* {" >> "} */}
+                            今すぐ使ってみる
+                            {/* {" >> "} */}
                         </LinkButton>
                     </div>
                 </div>

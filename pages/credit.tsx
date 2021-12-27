@@ -15,6 +15,7 @@ import {
     DiReact as ReactIcon ,
 } from "react-icons/di" ;
 import {
+    SiVercel as VercelIcon,
     SiMaterialui as MUIIcon ,
     SiNextdotjs as NextIcon ,
 } from "react-icons/si" ;
@@ -119,6 +120,22 @@ const Credit: VFC = () => {
                                 Github リポジトリ
                             </a>
                         </dd>
+
+                        <dt>Deploy</dt>
+                        <dd>
+                            <div>
+                                <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
+                                    <Image src={images.vercel} alt="vercel"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
+                                    <VercelIcon/>
+                                    Vercel
+                                </a>
+                            </div>
+                        </dd>
+
                     </dl>
                 </Section>
                 <Section>
@@ -151,6 +168,7 @@ const Credit: VFC = () => {
                             </div>
                             <div>
                                 <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
+                                    <VercelIcon/>
                                     Vercel
                                 </a>
                             </div>

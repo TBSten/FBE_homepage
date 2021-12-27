@@ -1,4 +1,5 @@
 import pages from "datasets/pages";
+import conf from "lib/conf";
 import React, { FC, } from "react";
 import Link from "./Link";
 
@@ -11,6 +12,16 @@ export const SideBarItem :FC<{}> = ({children})=>{
         </div>
     ) ;
 } ;
+
+function link(text:string,url:string){
+    return {
+        text,url,
+    } ;
+}
+const links = [
+    link("FBE",conf.FBE_URL),
+    link("FBE リポジトリ",conf.FBE_REPO_URL),
+] ;
 
 export type SideBarProps = {
 };
@@ -30,6 +41,18 @@ const SideBar: FC<SideBarProps> = ({children}) => {
                 </ul>
             </SideBarItem>
             {children}
+            <SideBarItem>
+                <h3>リンク</h3>
+                <ul>
+                    {links.map(link=>(
+                        <li key={link.text}>
+                            <Link href={link.url} newTab>
+                                {link.text}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </SideBarItem>
         </div>
     );
 };
