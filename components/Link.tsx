@@ -8,7 +8,7 @@ export type LinkProps = HTMLAttributes<HTMLAnchorElement> & {
     newTab?:boolean;
 } ;
 const Link :FC<LinkProps> = (props)=>{
-    const {href,newTab,children,...other} = props ; 
+    const {href,newTab=false,children,...other} = props ; 
     if(newTab){
         return (
             <a className={styles.link} target="_blank" {...props}>
