@@ -26,6 +26,7 @@ function usePageView(){
 }
 function MyApp({ Component, pageProps }) {
   usePageView();
+  console.log("App",existsGaId)
   return (
     <>
       <Head>
