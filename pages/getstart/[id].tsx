@@ -8,8 +8,8 @@ import Markdown from "markdown-to-jsx";
 import styles from "./scss/[title].module.scss";
 import LinkButton from "components/LinkButton";
 import Section from "components/Section";
-import Base from "components/layout.tsx/Base";
-import BaseContent from "components/layout.tsx/BaseContent";
+import Base from "components/layout/Base";
+import BaseContent from "components/layout/BaseContent";
 
 import img_ss_01 from "image/ss_01.png";
 import img_ss_02 from "image/ss_02.png";
@@ -96,7 +96,7 @@ const Body: FC<{ children: string }> = ({ children }) => {
         <MyMarkdown>
             {children}
         </MyMarkdown>
-    ) ;
+    );
 };
 
 const GetStartSide: FC<{ getstarts: GetstartData[] }> = ({ getstarts }) => {
@@ -195,12 +195,12 @@ export const getStaticProps: GetStaticProps<getStartServerSideProps> = async (co
     };
 };
 
-export const getStaticPaths: GetStaticPaths = async(ctx)=>{
-    const paths = getGetstarts().map(getstart=>`/getstart/${getstart.id}`);
+export const getStaticPaths: GetStaticPaths = async (ctx) => {
+    const paths = getGetstarts().map(getstart => `/getstart/${getstart.id}`);
     return {
         paths,
-        fallback:false,
-    } ;
+        fallback: false,
+    };
 };
 
 

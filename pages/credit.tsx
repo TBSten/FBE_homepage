@@ -1,23 +1,23 @@
-import Base from "components/layout.tsx/Base";
-import BaseContent from "components/layout.tsx/BaseContent";
+import Base from "components/layout/Base";
+import BaseContent from "components/layout/BaseContent";
 import Section from "components/Section";
 import Head from "next/head";
 import React, { FC, VFC } from "react";
-import Image from "next/image" ;
-import {images} from "image/index" ;
+import Image from "next/image";
+import { images } from "image/index";
 
 import {
     AiOutlineMail as MailIcon,
     AiOutlineTwitter as TwitterIcon,
     AiFillGithub as GithubIcon,
-} from "react-icons/ai" ;
+} from "react-icons/ai";
 import {
-    DiReact as ReactIcon ,
-} from "react-icons/di" ;
+    DiReact as ReactIcon,
+} from "react-icons/di";
 import {
-    SiMaterialui as MUIIcon ,
-    SiNextdotjs as NextIcon ,
-} from "react-icons/si" ;
+    SiMaterialui as MUIIcon,
+    SiNextdotjs as NextIcon,
+} from "react-icons/si";
 
 import styles from "./scss/credit.module.scss";
 
@@ -146,7 +146,7 @@ const Credit: VFC = () => {
                         <dd>
                             <div>
                                 <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
-                                    <Image src={images.vercel} alt="vercel"/>
+                                    <Image src={images.vercel} alt="vercel" />
                                 </a>
                             </div>
                             <div>

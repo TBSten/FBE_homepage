@@ -134,3 +134,14 @@
     }
 }
 
+.dangerous{
+    background-color: rgba(255, 144, 144, 0.738);
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    text-align: center;
+    @include vars.sp{
+        padding: 0.2rem;
+    }
+
+}
+

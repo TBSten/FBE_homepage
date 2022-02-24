@@ -1,5 +1,5 @@
-import Base from "components/layout.tsx/Base";
-import BaseContent from "components/layout.tsx/BaseContent";
+import Base from "components/layout/Base";
+import BaseContent from "components/layout/BaseContent";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React, { FC } from "react";
 import { DocsData, getContent, getDocs, getTopDocs } from "lib/docs";
@@ -36,9 +36,9 @@ interface DocProps {
     content: string;
     prev: DocsData | null;
     next: DocsData | null;
-    docs:DocsData[];
+    docs: DocsData[];
 }
-const Doc: FC<DocProps> = ({ content, prev, next ,docs}) => {
+const Doc: FC<DocProps> = ({ content, prev, next, docs }) => {
     return (
         <Base>
             <Head>
@@ -49,7 +49,7 @@ const Doc: FC<DocProps> = ({ content, prev, next ,docs}) => {
                 />
             </Head>
 
-            <BaseContent side={<DocsSideBar docs={docs}/>}>
+            <BaseContent side={<DocsSideBar docs={docs} />}>
                 <Section>
                     <h1>総合ドキュメント</h1>
                     ここではFBEにおける
@@ -89,7 +89,7 @@ export const getStaticProps: GetStaticProps<DocProps> = async (ctx) => {
         const id = ctx.params.id as string;
         const content = getContent(id);
         const { prev, next } = getPrevNext(id);
-        const docs = getTopDocs() ;
+        const docs = getTopDocs();
         return {
             props: {
                 content,
@@ -105,12 +105,12 @@ export const getStaticProps: GetStaticProps<DocProps> = async (ctx) => {
     }
 };
 
-export const getStaticPaths: GetStaticPaths = async (ctx)=>{
-    const paths = getDocs().map(doc=>`/docs/${doc.id}`) ;
+export const getStaticPaths: GetStaticPaths = async (ctx) => {
+    const paths = getDocs().map(doc => `/docs/${doc.id}`);
     return {
         paths,
         fallback: false,
-    } ;
-} ;
+    };
+};
 
 

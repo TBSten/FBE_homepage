@@ -9,6 +9,8 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.0.0",
+    "@next/mdx": "^12.1.0",
     "csv-parse": "^5.0.3",
     "html": "^1.0.0",
     "lodash": "^4.17.21",

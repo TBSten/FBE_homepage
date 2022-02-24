@@ -11,24 +11,6 @@ import Drawer from "./Drawer";
 import styles from "./scss/Header.module.scss";
 import pages from "datasets/pages";
 
-// const menus = [
-//     {
-//         label:"TOP",
-//         link:"/",
-//     },
-//     {
-//         label:"TUTORIAL",
-//         link:"/getstart",
-//     },
-//     {
-//         label:"DOCS",
-//         link:"/docs",
-//     },
-//     {
-//         label:"CREDIT",
-//         link:"/credit",
-//     },
-// ] ;
 const menus = pages;
 
 export default function Header() {
@@ -52,21 +34,27 @@ export default function Header() {
     });
     return (
         <>
-            <header className={className} ref={ref}>
-                <span>
-                    <Link href="/">{settings.title}</Link>
-                </span>
-                <ul>
-                    {menus.map((menu) => (
-                        <li key={menu.label}>
-                            <Link href={menu.link}>{menu.label}</Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className={styles.icon} onClick={handleOpenMenu}>
-                    <Image src={img_menu} alt="fbe image" />
+            <div>
+                <div className={styles.dangerous}>
+                    FBEv2.0がリリースされました！<br />
+                    一部ドキュメントの更新が追いついていない箇所があります。
                 </div>
-            </header>
+                <header className={className} ref={ref}>
+                    <span>
+                        <Link href="/">{settings.title}</Link>
+                    </span>
+                    <ul>
+                        {menus.map((menu) => (
+                            <li key={menu.label}>
+                                <Link href={menu.link}>{menu.label}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                    <div className={styles.icon} onClick={handleOpenMenu}>
+                        <Image src={img_menu} alt="fbe image" />
+                    </div>
+                </header>
+            </div>
 
             <div className={stickClassName}>
                 <span className={styles.logo}>

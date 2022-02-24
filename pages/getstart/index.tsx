@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import B from "components/B";
-import Base from "components/layout.tsx/Base";
-import BaseContent from "components/layout.tsx/BaseContent";
+import Base from "components/layout/Base";
+import BaseContent from "components/layout/BaseContent";
 import LinkButton from "components/LinkButton";
 import Section from "components/Section";
 import TopSection from "components/TopSection";

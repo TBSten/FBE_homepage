@@ -1,14 +1,16 @@
 import { useEffect } from "react";
 
-export default function useScroll(callback:(e?:Event)=>void){
-    useEffect(()=>{
+export default function useScroll(callback: (e?: Event) => void) {
+    useEffect(() => {
+        console.log("scroll");
+
         callback();
-        const handler :EventListener = (e)=>{
+        const handler: EventListener = (e) => {
             callback(e);
-        } ;
-        window.addEventListener("scroll",handler);
-        return ()=>{
-            window.removeEventListener("scroll",handler);
-        } ;
-    },[callback]);
+        };
+        window.addEventListener("scroll", handler);
+        return () => {
+            window.removeEventListener("scroll", handler);
+        };
+    }, [callback]);
 }
