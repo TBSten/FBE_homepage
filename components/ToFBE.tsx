@@ -1,7 +1,7 @@
+import conf from "lib/conf";
 import { FC } from "react";
 import Link from "./Link";
 import styles from "./scss/ToFBE.module.scss";
-import conf from "lib/conf";
 
 const ToFBE: FC<{}> = () => {
     return (

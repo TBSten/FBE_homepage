@@ -1,23 +1,22 @@
-import React from "react";
-import Image from "next/image";
-import Base from "components/layout/Base";
-import Section from "components/Section";
-import LinkButton from "components/LinkButton";
-import conf from "lib/conf";
+import B from "components/B";
 import Card from "components/Card";
 import ContentSection from "components/ContentSection";
-
-import img_kc from "image/Knowledge-cuate.png";
-import img_wd from "image/Website designer-bro.png";
+import ImageSection from "components/ImageSection";
+import Base from "components/layout/Base";
+import LinkButton from "components/LinkButton";
+import Section from "components/Section";
 import img_bg_top from "image/bg-top.svg";
+import img_kc from "image/Knowledge-cuate.png";
 import img_ss_02 from "image/ss_02.png";
 import img_ss_03 from "image/ss_03.png";
-
-import styles from "./scss/index.module.scss";
-import ImageSection from "components/ImageSection";
-import B from "components/B";
+import img_wd from "image/Website designer-bro.png";
+import conf from "lib/conf";
 import Head from "next/head";
-import LinedLink from "components/LinedLink";
+import Image from "next/image";
+import React from "react";
+import styles from "./scss/index.module.scss";
+
+
 
 function ImageLine({ children }) {
     return (
@@ -46,7 +45,7 @@ export default function Home() {
                     </p>
                     <div className={styles.btngroup}>
                         <LinkButton href={conf.FBE_URL} >
-                            {" >> "}今すぐ使ってみる{" >> "}
+                            今すぐ使ってみる
                         </LinkButton>
                     </div>
                 </div>
