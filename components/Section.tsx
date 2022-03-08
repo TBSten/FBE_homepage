@@ -1,8 +1,8 @@
 import useClasses from "lib/hooks/useClasses";
 import useScroll from "lib/hooks/useScroll";
-import { FC, HTMLAttributes, useCallback, useEffect, useRef, useState, } from "react";
-
+import { FC, HTMLAttributes, useCallback, useRef } from "react";
 import styles from "./scss/Section.module.scss";
+
 
 
 export type SectionProps = {
@@ -13,7 +13,7 @@ const Section: FC<SectionProps> = (props) => {
     const [classes, classesChange] = useClasses(
         [className, styles.section]
     );
-    const scrollCb = useCallback((e) => {
+    const scrollCb = useCallback(() => {
         if (ref.current) {
             const scrollBase = 100;
             const top = ref.current.offsetTop;

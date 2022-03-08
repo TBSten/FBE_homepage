@@ -11,7 +11,13 @@ const Link: FC<LinkProps> = (props) => {
     const { href, newTab = false, children, ...other } = props;
     if (newTab) {
         return (
-            <a className={styles.link} target="_blank" href={props.href} {...other}>
+            <a
+                className={styles.link}
+                target="_blank"
+                rel="noreferrer"
+                href={props.href}
+                {...other}
+            >
                 {children}
             </a>
         );

@@ -40,11 +40,11 @@ const Credit: VFC = () => {
                     </p>
                     <p>
                         お問い合わせはTBStenの
-                        <a href="mailto://programmingcafeteria@gmail.com" target="_blank" className={styles.link}>
+                        <a href="mailto://programmingcafeteria@gmail.com" rel="noreferrer" target="_blank" className={styles.link}>
                             メール
                         </a>
                         ,
-                        <a href="https://twitter.com/o2MCNTc60FpTAW3" target="_blank" className={styles.link}>
+                        <a href="https://twitter.com/o2MCNTc60FpTAW3" rel="noreferrer" target="_blank" className={styles.link}>
                             Twitter
                         </a>
                         まで！
