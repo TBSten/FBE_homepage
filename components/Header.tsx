@@ -35,10 +35,10 @@ export default function Header() {
     return (
         <>
             <div>
-                <div className={styles.dangerous}>
+                {/* <div className={styles.dangerous}>
                     FBEv2.0がリリースされました！<br />
                     一部ドキュメントの更新が追いついていない箇所があります。
-                </div>
+                </div> */}
                 <header className={className} ref={ref}>
                     <span>
                         <Link href="/">{settings.title}</Link>
