@@ -105,7 +105,7 @@ export default function Home() {
                             使ってみる
                         </LinkButton>
                     </Card>
-                    <Card>
+                    {/* <Card>
                         <h2>チュートリアル</h2>
                         <p>
                             私たちが用意している
@@ -115,7 +115,7 @@ export default function Home() {
                         <LinkButton href="/getstart" >
                             チュートリアル
                         </LinkButton>
-                    </Card>
+                    </Card> */}
                     <Card>
                         <h2> ドキュメント </h2>
                         <p>
