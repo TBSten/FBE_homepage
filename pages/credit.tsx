@@ -1,25 +1,24 @@
 import Base from "components/layout/Base";
 import BaseContent from "components/layout/BaseContent";
 import Section from "components/Section";
-import Head from "next/head";
-import React, { FC, VFC } from "react";
-import Image from "next/image";
 import { images } from "image/index";
-
+import Head from "next/head";
+import Image from "next/image";
+import React, { VFC } from "react";
 import {
-    AiOutlineMail as MailIcon,
-    AiOutlineTwitter as TwitterIcon,
-    AiFillGithub as GithubIcon,
+    AiFillGithub as GithubIcon, AiOutlineMail as MailIcon,
+    AiOutlineTwitter as TwitterIcon
 } from "react-icons/ai";
 import {
-    DiReact as ReactIcon,
+    DiReact as ReactIcon
 } from "react-icons/di";
 import {
     SiMaterialui as MUIIcon,
-    SiNextdotjs as NextIcon,
+    SiNextdotjs as NextIcon
 } from "react-icons/si";
-
 import styles from "./scss/credit.module.scss";
+
+
 
 const Credit: VFC = () => {
     return (
@@ -38,6 +37,17 @@ const Credit: VFC = () => {
                     <p>
                         青色のテキストはハイパーリンクになっているため、
                         クリック（タップ）することでページにジャンプすることができます。
+                    </p>
+                    <p>
+                        お問い合わせはTBStenの
+                        <a href="mailto://programmingcafeteria@gmail.com" target="_blank" className={styles.link}>
+                            メール
+                        </a>
+                        ,
+                        <a href="https://twitter.com/o2MCNTc60FpTAW3" target="_blank" className={styles.link}>
+                            Twitter
+                        </a>
+                        まで！
                     </p>
                 </Section>
                 <Section>
@@ -122,6 +132,22 @@ const Credit: VFC = () => {
                     </dl>
                 </Section>
                 <Section>
+                    <h2>
+                        リリース
+                    </h2>
+                    <dl className={styles.dl}>
+                        <dt>バージョン1</dt>
+                        <ul>
+                            <li>初リリース</li>
+                        </ul>
+                        <dt>バージョン2</dt>
+                        <ul>
+                            <li>UIを一新</li>
+                            <li>プログラム変換機能を追加</li>
+                        </ul>
+                    </dl>
+                </Section>
+                <Section>
                     <h2> FlowchartBuildExecutor ホームページ </h2>
                     <dl className={styles.dl}>
                         <dt>Developer</dt>
@@ -146,15 +172,17 @@ const Credit: VFC = () => {
                         <dd>
                             <div>
                                 <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
-                                    <Image src={images.vercel} alt="vercel" />
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
                                     Vercel
                                 </a>
                             </div>
+                            <div>
+                            </div>
                         </dd>
+                        <div className={styles["foot-icons"]}>
+                            <a href="https://vercel.com?utm_source=tbsten&utm_campaign=oss.">
+                                <Image src={images.vercel} alt="vercel" />
+                            </a>
+                        </div>
                     </dl>
                 </Section>
             </BaseContent>

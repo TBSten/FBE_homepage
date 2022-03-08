@@ -17,7 +17,6 @@ import React from "react";
 import styles from "./scss/index.module.scss";
 
 
-
 function ImageLine({ children }) {
     return (
         <div className={styles.imgLine}>

@@ -1,34 +1,34 @@
 
 
-export interface PageData{
-    label:string;
-    jpName:string;
-    link:string;
+export interface PageData {
+    label: string;
+    jpName: string;
+    link: string;
 }
-const pages :PageData[] =  [
+const pages: PageData[] = [
     {
-        label:"TOP",
-        jpName:"トップ",
-        link:"/",
+        label: "TOP",
+        jpName: "トップ",
+        link: "/",
+    },
+    // {
+    //     label:"TUTORIAL",
+    //     jpName:"チュートリアル",
+    //     link:"/getstart",
+    // },
+    {
+        label: "DOCS",
+        jpName: "ドキュメント",
+        link: "/docs",
     },
     {
-        label:"TUTORIAL",
-        jpName:"チュートリアル",
-        link:"/getstart",
+        label: "CREDIT",
+        jpName: "クレジット",
+        link: "/credit",
     },
-    {
-        label:"DOCS",
-        jpName:"ドキュメント",
-        link:"/docs",
-    },
-    {
-        label:"CREDIT",
-        jpName:"クレジット",
-        link:"/credit",
-    },
-] ;
+];
 
 
-export default pages ;
+export default pages;
 
 

@@ -1,21 +1,21 @@
-import React, { useRef } from "react";
-import Image from "next/image";
 import settings from "base-setting";
-import Link from "./Link";
-import useScroll from "lib/hooks/useScroll";
-import useClasses from "lib/hooks/useClasses";
+import pages from "datasets/pages";
 import img_menu from "image/icon-menu.png";
 import useBoolState from "lib/hooks/useBoolState";
+import useClasses from "lib/hooks/useClasses";
+import useScroll from "lib/hooks/useScroll";
+import Image from "next/image";
+import React, { useRef } from "react";
 import Drawer from "./Drawer";
-
+import Link from "./Link";
 import styles from "./scss/Header.module.scss";
-import pages from "datasets/pages";
+
 
 const menus = pages;
 
 export default function Header() {
-    const [classes, classesChange, className] = useClasses([styles.header]);
-    const [stickClasses, stickClassesChange, stickClassName] = useClasses([
+    const [, , className] = useClasses([styles.header]);
+    const [, stickClassesChange, stickClassName] = useClasses([
         styles.stick,
     ]);
     const ref = useRef<HTMLElement | null>(null);

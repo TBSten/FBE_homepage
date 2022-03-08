@@ -1,77 +1,80 @@
 {
-    "values":[
+    "values": [
         {
-            "id":"operation",
-            "title":"基本操作"
+            "id": "operation",
+            "title": "基本操作"
         },
         {
-            "id":"symbols",
-            "title":"記号",
-            "pages":[
+            "id": "symbols",
+            "title": "記号",
+            "pages": [
                 {
-                    "id":"symbols_terminal_start",
-                    "title":"はじめ端子記号"
+                    "id": "symbols_terminal_start",
+                    "title": "はじめ端子記号"
                 },
                 {
-                    "id":"symbols_terminal_end",
-                    "title":"おわり端子記号"
+                    "id": "symbols_terminal_end",
+                    "title": "おわり端子記号"
                 },
                 {
-                    "id":"symbols_calc",
-                    "title":"計算記号"
+                    "id": "symbols_calc",
+                    "title": "計算記号"
                 },
                 {
-                    "id":"symbols_data",
-                    "title":"データ記号"
+                    "id": "symbols_input",
+                    "title": "入力記号"
                 },
                 {
-                    "id":"symbols_while",
-                    "title":"繰り返し記号"
+                    "id": "symbols_output",
+                    "title": "出力記号"
                 },
                 {
-                    "id":"symbols_for",
-                    "title":"回数繰り返し記号"
+                    "id": "symbols_while",
+                    "title": "繰り返し記号"
                 },
                 {
-                    "id":"symbols_doublebranch",
-                    "title":"分岐記号"
+                    "id": "symbols_for",
+                    "title": "回数繰り返し記号"
                 },
                 {
-                    "id":"symbols_switch",
-                    "title":"多分岐記号"
+                    "id": "symbols_if",
+                    "title": "分岐記号"
                 },
                 {
-                    "id":"symbols_prepare",
-                    "title":"準備記号"
+                    "id": "symbols_switch",
+                    "title": "多分岐記号"
                 },
                 {
-                    "id":"symbols_process",
-                    "title":"処理記号"
+                    "id": "symbols_prepare",
+                    "title": "準備記号"
                 },
                 {
-                    "id":"symbols_flow",
-                    "title":"フロー"
+                    "id": "symbols_process",
+                    "title": "処理記号"
+                },
+                {
+                    "id": "symbols_flow",
+                    "title": "フロー"
                 }
             ]
         },
         {
-            "id":"exetype",
-            "title":"実行タイプ",
-            "pages":[
+            "id": "exetype",
+            "title": "実行タイプ",
+            "pages": [
                 {
-                    "id":"exetype_msgbox",
-                    "title":"メッセージボックス"
+                    "id": "exetype_msgbox",
+                    "title": "メッセージボックス"
                 },
                 {
-                    "id":"exetype_terminal",
-                    "title":"ターミナル"
+                    "id": "exetype_terminal",
+                    "title": "ターミナル"
                 },
                 {
-                    "id":"exetype_table",
-                    "title":"テーブル"
+                    "id": "exetype_table",
+                    "title": "テーブル"
                 }
             ]
         }
     ]
 }
-

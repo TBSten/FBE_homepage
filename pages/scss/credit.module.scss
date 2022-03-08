@@ -1,6 +1,16 @@
 
 @use "style/var" as v ;
 
+@mixin link {
+    color: rgb(76, 41, 235) ;
+    transition: v.$transition;
+    &:hover{
+        opacity: 0.5;
+        transition: v.$transition;
+    }
+}
+
+
 .dl{
     dt{
         margin-top: 2rem;
@@ -15,12 +25,13 @@
         }
     }
     a{
-        color: rgb(76, 41, 235) ;
-        transition: v.$transition;
-        &:hover{
-            opacity: 0.5;
-            transition: v.$transition;
-        }
+        @include link();
     }
 }
-
+.link{
+    @include link();
+}
+.foot-icons{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
