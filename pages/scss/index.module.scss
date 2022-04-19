@@ -38,7 +38,7 @@ section.section{
 
     background-size: cover;
     background-position: center;
-    
+
     @include v.sp{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -88,6 +88,7 @@ section.section{
             text-align: center;
             margin: 0;
         }
+        animation-delay: 3s;
     }
     p{
         font-size: max(1.5rem,3vw);

@@ -1,0 +1,104 @@
+"filename", "language", "JSON", "TypeScript React", "SCSS", "JavaScript React", "JSON with Comments", "TypeScript", "JavaScript", "XML", "HTML", "Markdown", "SVG", "comment", "blank", "total"
+"/Users/tsubasa/Desktop/dev/fbe/homepage/.eslintrc.json", "JSON", 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/tsubasa/Desktop/dev/fbe/homepage/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 7, 10
+"/Users/tsubasa/Desktop/dev/fbe/homepage/base-setting.jsx", "JavaScript React", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 5, 8
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/B.tsx", "TypeScript React", 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Card.tsx", "TypeScript React", 0, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 36
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/ContentSection.tsx", "TypeScript React", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 20
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Drawer.tsx", "TypeScript React", 0, 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 63
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Footer.tsx", "TypeScript React", 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 27
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Header.tsx", "TypeScript React", 0, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6, 88
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/ImageSection.tsx", "TypeScript React", 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 39
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/LinedLink.tsx", "TypeScript React", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 18
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Link.tsx", "TypeScript React", 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 41
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/LinkButton.tsx", "TypeScript React", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 33
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Modal.tsx", "TypeScript React", 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 21
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/Section.tsx", "TypeScript React", 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 35
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/SideBar.tsx", "TypeScript React", 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 38
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/SkeletonSection.tsx", "TypeScript React", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/ToFBE.tsx", "TypeScript React", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/TopSection.tsx", "TypeScript React", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 15
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/Base.module.scss", "SCSS", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/Base.tsx", "TypeScript React", 0, 31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 39
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/BaseContent.module.scss", "SCSS", 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 4, 5, 39
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/BaseContent.tsx", "TypeScript React", 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/B.module.scss", "SCSS", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Card.module.scss", "SCSS", 0, 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 48
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/ContentSection.module.scss", "SCSS", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Drawer.module.scss", "SCSS", 0, 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 46
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Footer.module.scss", "SCSS", 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 33
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Header.module.scss", "SCSS", 0, 0, 138, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 148
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/ImageSection.module.scss", "SCSS", 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 28
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/LinedLink.module.scss", "SCSS", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Link.module.scss", "SCSS", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/LinkButton.module.scss", "SCSS", 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 32
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Modal.module.scss", "SCSS", 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 23
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Section.module.scss", "SCSS", 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6, 32
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/SideBar.module.scss", "SCSS", 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 34
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/SkeletonSection.module.scss", "SCSS", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 15
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/ToFBE.module.scss", "SCSS", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 31
+"/Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/TopSection.module.scss", "SCSS", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 17
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/docs.json", "JSON", 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 1, 13, 24
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype_msgbox.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 10, 18
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype_table.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 3, 25, 49
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype_terminal.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 3, 19, 38
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/operation.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 167, 0, 2, 137, 306
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 33, 59
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_calc.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 0, 4, 31, 79
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_flow.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 4, 30, 59
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_for.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 1, 25, 53
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_if.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 1, 20, 38
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_input.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 8, 18, 40
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_output.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 1, 21, 39
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_prepare.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 1, 25, 56
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_process.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 1, 18, 38
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_switch.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 1, 26, 49
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_terminal_end.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 1, 20, 41
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_terminal_start.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 1, 20, 39
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_while.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 1, 18, 33
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/edit.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 162, 0, 1, 104, 267
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/execute.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 0, 26, 91, 201
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/getstart.json", "JSON", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 21
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/introduction.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 0, 0, 38, 89
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/saving.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 35, 78
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/test.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 7, 29
+"/Users/tsubasa/Desktop/dev/fbe/homepage/datasets/pages.ts", "TypeScript", 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 5, 7, 35
+"/Users/tsubasa/Desktop/dev/fbe/homepage/image/bg-top.svg", "SVG", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5
+"/Users/tsubasa/Desktop/dev/fbe/homepage/image/index.ts", "TypeScript", 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 3, 21
+"/Users/tsubasa/Desktop/dev/fbe/homepage/image/vercel.svg", "SVG", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 1, 7
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/classNames.ts", "TypeScript", 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 13, 3, 37
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/conf.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 4, 9
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/docs.ts", "TypeScript", 0, 0, 0, 0, 0, 103, 0, 0, 0, 0, 0, 4, 6, 113
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/getstart.ts", "TypeScript", 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 3, 11, 95
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/gtag.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 4, 6, 32
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/hooks/useBoolState.ts", "TypeScript", 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 5, 19
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/hooks/useClasses.tsx", "TypeScript React", 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 44
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/hooks/useScroll.tsx", "TypeScript React", 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/mymarkdown/index.module.scss", "SCSS", 0, 0, 88, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 107
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/mymarkdown/index.tsx", "TypeScript React", 0, 136, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9, 146
+"/Users/tsubasa/Desktop/dev/fbe/homepage/lib/releases.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 4, 9
+"/Users/tsubasa/Desktop/dev/fbe/homepage/next-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 2, 7
+"/Users/tsubasa/Desktop/dev/fbe/homepage/next-sitemap.js", "JavaScript", 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 2, 7
+"/Users/tsubasa/Desktop/dev/fbe/homepage/next.config.js", "JavaScript", 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 7, 3, 20
+"/Users/tsubasa/Desktop/dev/fbe/homepage/package-lock.json", "JSON", 8574, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8575
+"/Users/tsubasa/Desktop/dev/fbe/homepage/package.json", "JSON", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 37
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/_app.tsx", "TypeScript React", 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 65
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/_document.tsx", "TypeScript React", 0, 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 54
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/credit.tsx", "TypeScript React", 0, 182, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 198
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/docs/[id].tsx", "TypeScript React", 0, 89, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 10, 117
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/docs/index.tsx", "TypeScript React", 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 11, 99
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/docs/scss/[id].module.scss", "SCSS", 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/index.tsx", "TypeScript React", 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 6, 134
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/scss/credit.module.scss", "SCSS", 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 38
+"/Users/tsubasa/Desktop/dev/fbe/homepage/pages/scss/index.module.scss", "SCSS", 0, 0, 132, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16, 149
+"/Users/tsubasa/Desktop/dev/fbe/homepage/public/googlea626c14ac8c9a511.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/tsubasa/Desktop/dev/fbe/homepage/public/manifest.json", "JSON", 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 68
+"/Users/tsubasa/Desktop/dev/fbe/homepage/public/sitemap.xml", "XML", 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 28
+"/Users/tsubasa/Desktop/dev/fbe/homepage/public/sw.js", "JavaScript", 0, 0, 0, 0, 0, 0, 76, 0, 0, 0, 0, 28, 11, 115
+"/Users/tsubasa/Desktop/dev/fbe/homepage/public/workbox-9a8b0a38.js", "JavaScript", 0, 0, 0, 0, 0, 0, 1441, 0, 0, 0, 0, 934, 363, 2738
+"/Users/tsubasa/Desktop/dev/fbe/homepage/style/_var.scss", "SCSS", 0, 0, 133, 0, 0, 0, 0, 0, 0, 0, 0, 10, 15, 158
+"/Users/tsubasa/Desktop/dev/fbe/homepage/style/global.scss", "SCSS", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"/Users/tsubasa/Desktop/dev/fbe/homepage/style/media.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 5
+"/Users/tsubasa/Desktop/dev/fbe/homepage/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 32
+"Total", "-", 8780, 1261, 879, 3, 32, 293, 1532, 28, 1, 880, 11, 1124, 1542, 16366

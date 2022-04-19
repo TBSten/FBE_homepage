@@ -1,0 +1,152 @@
+Date : 2022-03-10 16:47:02
+Directory : /Users/tsubasa/Desktop/dev/fbe/homepage
+Total : 102 files,  13700 codes, 1124 comments, 1542 blanks, all 16366 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          6 |      8,780 |          0 |          5 |      8,785 |
+| JavaScript         |          4 |      1,532 |        969 |        379 |      2,880 |
+| TypeScript React   |         27 |      1,261 |         40 |        157 |      1,458 |
+| Markdown           |         24 |        880 |         61 |        791 |      1,732 |
+| SCSS               |         24 |        879 |         20 |        149 |      1,048 |
+| TypeScript         |         11 |        293 |         34 |         55 |        382 |
+| JSON with Comments |          1 |         32 |          0 |          0 |         32 |
+| XML                |          1 |         28 |          0 |          0 |         28 |
+| SVG                |          2 |         11 |          0 |          1 |         12 |
+| JavaScript React   |          1 |          3 |          0 |          5 |          8 |
+| HTML               |          1 |          1 |          0 |          0 |          1 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                   |        102 |     13,700 |      1,124 |      1,542 |     16,366 |
+| components                                                                          |         36 |        973 |         11 |        173 |      1,157 |
+| components/layout                                                                   |          4 |         87 |          4 |         18 |        109 |
+| components/scss                                                                     |         16 |        444 |          5 |         81 |        530 |
+| datasets                                                                            |         26 |      1,000 |         66 |        792 |      1,858 |
+| datasets/docs                                                                       |         19 |        595 |         34 |        509 |      1,138 |
+| datasets/getstart                                                                   |          6 |        382 |         27 |        276 |        685 |
+| image                                                                               |          3 |         29 |          0 |          4 |         33 |
+| lib                                                                                 |         11 |        531 |         25 |         72 |        628 |
+| lib/hooks                                                                           |          3 |         70 |          0 |         10 |         80 |
+| lib/mymarkdown                                                                      |          2 |        224 |          1 |         28 |        253 |
+| pages                                                                               |          9 |        744 |         38 |         81 |        863 |
+| pages/docs                                                                          |          3 |        173 |         28 |         24 |        225 |
+| pages/docs/scss                                                                     |          1 |          6 |          0 |          3 |          9 |
+| pages/scss                                                                          |          2 |        165 |          1 |         21 |        187 |
+| public                                                                              |          5 |      1,613 |        962 |        375 |      2,950 |
+| style                                                                               |          3 |        144 |         10 |         23 |        177 |
++-------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                            | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/tsubasa/Desktop/dev/fbe/homepage/.eslintrc.json                              | JSON               |          3 |          0 |          1 |          4 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/README.md                                   | Markdown           |          3 |          0 |          7 |         10 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/base-setting.jsx                            | JavaScript React   |          3 |          0 |          5 |          8 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/B.tsx                            | TypeScript React   |          9 |          0 |          3 |         12 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Card.tsx                         | TypeScript React   |         26 |          0 |         10 |         36 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/ContentSection.tsx               | TypeScript React   |         15 |          0 |          5 |         20 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Drawer.tsx                       | TypeScript React   |         59 |          0 |          4 |         63 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Footer.tsx                       | TypeScript React   |         22 |          0 |          5 |         27 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Header.tsx                       | TypeScript React   |         80 |          2 |          6 |         88 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/ImageSection.tsx                 | TypeScript React   |         34 |          0 |          5 |         39 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/LinedLink.tsx                    | TypeScript React   |         14 |          0 |          4 |         18 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Link.tsx                         | TypeScript React   |         36 |          0 |          5 |         41 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/LinkButton.tsx                   | TypeScript React   |         30 |          0 |          3 |         33 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Modal.tsx                        | TypeScript React   |         16 |          0 |          5 |         21 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/Section.tsx                      | TypeScript React   |         30 |          0 |          5 |         35 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/SideBar.tsx                      | TypeScript React   |         33 |          0 |          5 |         38 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/SkeletonSection.tsx              | TypeScript React   |         14 |          0 |          3 |         17 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/ToFBE.tsx                        | TypeScript React   |         13 |          0 |          2 |         15 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/TopSection.tsx                   | TypeScript React   |         11 |          0 |          4 |         15 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/Base.module.scss          | SCSS               |          3 |          0 |          1 |          4 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/Base.tsx                  | TypeScript React   |         31 |          0 |          8 |         39 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/BaseContent.module.scss   | SCSS               |         30 |          4 |          5 |         39 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/layout/BaseContent.tsx           | TypeScript React   |         23 |          0 |          4 |         27 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/B.module.scss               | SCSS               |          5 |          0 |          3 |          8 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Card.module.scss            | SCSS               |         42 |          0 |          6 |         48 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/ContentSection.module.scss  | SCSS               |          8 |          0 |          4 |         12 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Drawer.module.scss          | SCSS               |         40 |          1 |          5 |         46 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Footer.module.scss          | SCSS               |         27 |          0 |          6 |         33 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Header.module.scss          | SCSS               |        138 |          0 |         10 |        148 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/ImageSection.module.scss    | SCSS               |         23 |          2 |          3 |         28 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/LinedLink.module.scss       | SCSS               |          9 |          0 |          3 |         12 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Link.module.scss            | SCSS               |          9 |          0 |          2 |         11 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/LinkButton.module.scss      | SCSS               |         27 |          0 |          5 |         32 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Modal.module.scss           | SCSS               |         18 |          0 |          5 |         23 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/Section.module.scss         | SCSS               |         25 |          1 |          6 |         32 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/SideBar.module.scss         | SCSS               |         30 |          0 |          4 |         34 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/SkeletonSection.module.scss | SCSS               |         11 |          0 |          4 |         15 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/ToFBE.module.scss           | SCSS               |         21 |          0 |         10 |         31 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/components/scss/TopSection.module.scss      | SCSS               |         11 |          1 |          5 |         17 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/docs.json                     | JSON               |         80 |          0 |          0 |         80 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype.md                    | Markdown           |         10 |          1 |         13 |         24 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype_msgbox.md             | Markdown           |          8 |          0 |         10 |         18 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype_table.md              | Markdown           |         21 |          3 |         25 |         49 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/exetype_terminal.md           | Markdown           |         16 |          3 |         19 |         38 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/operation.md                  | Markdown           |        167 |          2 |        137 |        306 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols.md                    | Markdown           |         26 |          0 |         33 |         59 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_calc.md               | Markdown           |         44 |          4 |         31 |         79 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_flow.md               | Markdown           |         25 |          4 |         30 |         59 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_for.md                | Markdown           |         27 |          1 |         25 |         53 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_if.md                 | Markdown           |         17 |          1 |         20 |         38 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_input.md              | Markdown           |         14 |          8 |         18 |         40 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_output.md             | Markdown           |         17 |          1 |         21 |         39 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_prepare.md            | Markdown           |         30 |          1 |         25 |         56 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_process.md            | Markdown           |         19 |          1 |         18 |         38 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_switch.md             | Markdown           |         22 |          1 |         26 |         49 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_terminal_end.md       | Markdown           |         20 |          1 |         20 |         41 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_terminal_start.md     | Markdown           |         18 |          1 |         20 |         39 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/docs/symbols_while.md              | Markdown           |         14 |          1 |         18 |         33 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/edit.md                   | Markdown           |        162 |          1 |        104 |        267 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/execute.md                | Markdown           |         84 |         26 |         91 |        201 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/getstart.json             | JSON               |         20 |          0 |          1 |         21 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/introduction.md           | Markdown           |         51 |          0 |         38 |         89 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/saving.md                 | Markdown           |         43 |          0 |         35 |         78 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/getstart/test.md                   | Markdown           |         22 |          0 |          7 |         29 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/datasets/pages.ts                           | TypeScript         |         23 |          5 |          7 |         35 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/image/bg-top.svg                            | SVG                |          5 |          0 |          0 |          5 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/image/index.ts                              | TypeScript         |         18 |          0 |          3 |         21 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/image/vercel.svg                            | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/classNames.ts                           | TypeScript         |         21 |         13 |          3 |         37 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/conf.ts                                 | TypeScript         |          5 |          0 |          4 |          9 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/docs.ts                                 | TypeScript         |        103 |          4 |          6 |        113 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/getstart.ts                             | TypeScript         |         81 |          3 |         11 |         95 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/gtag.ts                                 | TypeScript         |         22 |          4 |          6 |         32 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/hooks/useBoolState.ts                   | TypeScript         |         14 |          0 |          5 |         19 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/hooks/useClasses.tsx                    | TypeScript React   |         42 |          0 |          2 |         44 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/hooks/useScroll.tsx                     | TypeScript React   |         14 |          0 |          3 |         17 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/mymarkdown/index.module.scss            | SCSS               |         88 |          0 |         19 |        107 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/mymarkdown/index.tsx                    | TypeScript React   |        136 |          1 |          9 |        146 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/lib/releases.ts                             | TypeScript         |          5 |          0 |          4 |          9 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/next-env.d.ts                               | TypeScript         |          0 |          5 |          2 |          7 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/next-sitemap.js                             | JavaScript         |          5 |          0 |          2 |          7 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/next.config.js                              | JavaScript         |         10 |          7 |          3 |         20 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/package-lock.json                           | JSON               |      8,574 |          0 |          1 |      8,575 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/package.json                                | JSON               |         36 |          0 |          1 |         37 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/_app.tsx                              | TypeScript React   |         53 |          0 |         12 |         65 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/_document.tsx                         | TypeScript React   |         52 |          0 |          2 |         54 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/credit.tsx                            | TypeScript React   |        182 |          0 |         16 |        198 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/docs/[id].tsx                         | TypeScript React   |         89 |         18 |         10 |        117 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/docs/index.tsx                        | TypeScript React   |         78 |         10 |         11 |         99 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/docs/scss/[id].module.scss            | SCSS               |          6 |          0 |          3 |          9 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/index.tsx                             | TypeScript React   |        119 |          9 |          6 |        134 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/scss/credit.module.scss               | SCSS               |         33 |          0 |          5 |         38 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/pages/scss/index.module.scss                | SCSS               |        132 |          1 |         16 |        149 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/public/googlea626c14ac8c9a511.html          | HTML               |          1 |          0 |          0 |          1 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/public/manifest.json                        | JSON               |         67 |          0 |          1 |         68 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/public/sitemap.xml                          | XML                |         28 |          0 |          0 |         28 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/public/sw.js                                | JavaScript         |         76 |         28 |         11 |        115 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/public/workbox-9a8b0a38.js                  | JavaScript         |      1,441 |        934 |        363 |      2,738 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/style/_var.scss                             | SCSS               |        133 |         10 |         15 |        158 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/style/global.scss                           | SCSS               |         10 |          0 |          4 |         14 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/style/media.ts                              | TypeScript         |          1 |          0 |          4 |          5 |
+| /Users/tsubasa/Desktop/dev/fbe/homepage/tsconfig.json                               | JSON with Comments |         32 |          0 |          0 |         32 |
+| Total                                                                               |                    |     13,700 |      1,124 |      1,542 |     16,366 |
++-------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

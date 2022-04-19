@@ -154,13 +154,4 @@ $breakpoint: 560px ;
 
 
 
-@mixin test {
-    transition: $transition;
-    &:hover{
-        background-color: #3f51b5;
-        transition: $transition;
-    }
-}
-
-
 
